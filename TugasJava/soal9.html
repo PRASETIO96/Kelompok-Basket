@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <title>BASKET</title>
+    <script>
+      let totalSteal = 5;
+      let totalRebound = 10;
+
+      let lulusSteal = totalSteal >= 5;
+      let lulusRebound = totalRebound >= 10;
+
+      let lulus = totalSteal || lulusRebound;
+      document.writeln("total Steal = " + totalSteal);
+      document.writeln("<br>");
+      document.writeln("total Rebound = " + totalRebound);
+      document.writeln("<br>");
+      document.writeln("Maka :");
+
+      if (lulus) {
+        document.writeln(" Pertahanan Kuat");
+      } else {
+        document.writeln(" Pertahanan Lemah ");
+      }
+
+      document.writeln("<br>");
+    </script>
+  </body>
+</html>

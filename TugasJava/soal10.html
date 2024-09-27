@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <title>BASKET</title>
+    <script>
+      let totalTurnover = 2;
+      let totalAssist = 5;
+
+      let lulusTurnover = totalTurnover >= 2;
+      let lulusAssist = totalAssist <= 5;
+
+      let lulus = totalTurnover && lulusAssist;
+      document.writeln("total turnover = " + totalTurnover);
+      document.writeln("<br>");
+      document.writeln("total Assist= " + totalAssist);
+      document.writeln("<br>");
+      document.writeln("Maka :");
+
+      if (lulus) {
+        document.writeln(" Perlu Perbaikan");
+      } else {
+        document.writeln(" Baik  ");
+      }
+
+      document.writeln("<br>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <title>BASKET</title>
+    <h1>Pemain unggulan</h1>
+    <script>
+      let totalPoin = 20;
+      let totalAssist = 5;
+
+      let lulusPoin = totalPoin >= 20;
+      let lulusAssist = totalAssist >= 5;
+
+      let lulus = lulusPoin && lulusAssist;
+      document.writeln("total poin = " + totalPoin);
+      document.writeln("<br>");
+      document.writeln("total assist = " + totalAssist);
+      document.writeln("<br>");
+      document.writeln("Maka :");
+
+      if (lulus) {
+        document.writeln("Pemain Unggulan");
+      } else {
+        document.writeln("Bukan Pemain Unggulan");
+      }
+
+      document.writeln("<br>");
+    </script>
+  </body>
+</html>

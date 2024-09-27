@@ -1,0 +1,56 @@
+<html>
+  <body>
+    <title>Kelompok Basket</title>
+    <h1>Komunitas Basket</h1>
+    <ul>
+      <li>Setiap 3 tembakan sukses mendapat 10 poin</li>
+      <li>Di akhir sesi latihan,mereka menambah 1 tembakan ekstra</li>
+    </ul>
+    <ol>
+      <li>
+        Gunakan augment assignment untuk menghitung total point dari 3 sesi
+        latihan
+      </li>
+      <li>
+        Gunakan unary operator untuk menambah point ekstra dari satu tembakan
+        tambahan.
+      </li>
+      <li>
+        Gunakan operator perbandingan untuk mengecek apakah total point melebihi
+        50. jika ya, cetak"latihan efektif",jika tidak, cetak"Tingkatkan lagi.""
+      </li>
+    </ol>
+    <h2>JAWABAN</h2>
+    <script>
+      // augment
+      let tembakan = 3;
+      let poin = 10;
+
+      // tembakan += 3;
+      // poin += 10;
+
+      document.writeln("Total  poin dari" + tembakan + "tembakan = " + poin);
+
+      //let extra = 1;
+      tembakan++;
+      let latihan = 1;
+
+      document.writeln("<br>");
+      document.writeln(
+        "Total  poin dari" + latihan * 3 + "latihan = " + poin * 3
+      );
+
+      poin = 10 / 3;
+
+      document.writeln("<br>");
+      document.writeln(
+        "Total poin extra dari tembakan tambahan adalah =" + poin
+      );
+      //Operator Perbandingan
+
+      let totalpoin = poin < 50;
+      document.writeln("<br>");
+      document.writeln(" Tingkatkan lagi = " + "Tingkatkan Lagi");
+    </script>
+  </body>
+</html>
