@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <title>BASKET</title>
+    <script>
+      let totalFouls = 2;
+      let totalRebound = 7;
+
+      let lulusFouls = totalFouls >= 2;
+      let lulusRebound = totalRebound >= 7;
+
+      let lulus = totalFouls || lulusRebound;
+      document.writeln("total fouls = " + totalFouls);
+      document.writeln("<br>");
+      document.writeln("total rebound = " + totalRebound);
+      document.writeln("<br>");
+      document.writeln("Maka :");
+
+      if (lulus) {
+        document.writeln(" Pemain Bertahan Bagus");
+      } else {
+        document.writeln(" Pemain Bertahan Lemah ");
+      }
+
+      document.writeln("<br>");
+    </script>
+  </body>
+</html>

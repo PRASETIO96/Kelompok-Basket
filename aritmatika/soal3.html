@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <title>BASKET</title>
+    <script>
+      let totalPoin = 15;
+      let totalAssist = 5;
+
+      let lulusPoin = totalPoin >= 15;
+      let lulusAssist = totalAssist >= 5;
+
+      let lulus = lulusPoin && lulusAssist;
+      document.writeln("total poin = " + totalPoin);
+      document.writeln("<br>");
+      document.writeln("total assist = " + totalAssist);
+      document.writeln("<br>");
+      document.writeln("Maka :");
+
+      if (lulus) {
+        document.writeln("Performa Rendah");
+      } else {
+        document.writeln("Performa tinggi");
+      }
+
+      document.writeln("<br>");
+    </script>
+  </body>
+</html>

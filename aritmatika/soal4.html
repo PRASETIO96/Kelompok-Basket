@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <title>BASKET</title>
+    <script>
+      let totalPoin = 25;
+      let totalRebound = 8;
+
+      let lulusPoin = totalPoin >= 25;
+      let lulusRebound = totalRebound >= 8;
+
+      let lulus = lulusPoin || lulusRebound;
+      document.writeln("total poin = " + totalPoin);
+      document.writeln("<br>");
+      document.writeln("total rebound = " + totalRebound);
+      document.writeln("<br>");
+      document.writeln("Maka :");
+
+      if (lulus) {
+        document.writeln("Performa Hebat");
+      } else {
+        document.writeln("Performa Biasa ");
+      }
+
+      document.writeln("<br>");
+    </script>
+  </body>
+</html>
