@@ -5,10 +5,10 @@
       let totalFouls = 2;
       let totalRebound = 7;
 
-      let lulusFouls = totalFouls <= 2;
-      let lulusRebound = totalRebound >= 7;
+      let lulusFouls = totalFouls > 2;
+      let lulusRebound = totalRebound < 7;
 
-      let lulus = totalFouls || lulusRebound;
+      let lulus = lulusFouls || lulusRebound;
       document.writeln("total fouls = " + totalFouls);
       document.writeln("<br>");
       document.writeln("total rebound = " + totalRebound);

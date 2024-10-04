@@ -3,20 +3,20 @@
     <title>BASKET</title>
   
     <script>
-      let totalLatihan = 7;
+      let totalLatihan = 6;
 
-      let luluslatihan = totalLatihan >= 7;
+      let luluslatihan = totalLatihan < 7;
 
       let lulus = luluslatihan;
-      document.writeln("total Latihan = " + totalLatihan);
+      document.writeln("total Hari Latihan = " + totalLatihan);
       document.writeln("<br>");
 
       document.writeln("Maka :");
 
       if (lulus) {
-        document.writeln("Latihan Wajib");
+        document.writeln(" Tidak Latihan Wajib");
       } else {
-        document.writeln("Tidak Latihan Wajib");
+        document.writeln("Latihan Wajib");
       }
     </script>
   </body>
