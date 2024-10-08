@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(img/logooo.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 50px;
+        margin: 0;
+      }
+      h1 {
+        text-align: center;
+        background-color: black;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Pendaftaran Turnamen</h1>
+
+    <form>
+      <label for="Registrasi">Tanggal Pendaftaran :</label>
+      <input type="date" name="Join Date" id="Join Date" value="08-08-2-24" />
+      <br>
+      <br>
+
+
+      <label for="Waktu Pertandingan"> Waktu Pertandingan :</label>
+      <input type="time" name="" id="Waktu" value="07:00" /> <br />
+      <label for="Pertandingan Selesai"> Pertandingan Selesai :</label>
+      <input
+        type="time"
+        name="Pertandingan Selesai"
+        id=" Pertandingan Selesai"
+        value="17:00"
+      />
+      <br />
+      <input type="submit" value="Simpan" />
+   <br>
+   <br>
+   
+      Email : <br />
+      <input name="Email" type="email " /> <br />
+   <input type="submit" value="Kirim">
+    <br>
+  <br>
+      <label for="Tim">Logo Tim</label>
+      <input type="file" name="Tim" id="profile" /><br />
+      <input
+        type="submit"
+        value="Kirim
+      "
+      />
+  <br>
+  <br>
+
+      <label for="Password">Password</label>
+      <input type="Password" name="Password" id="Password" /> <br />
+      <input type="submit" value="Masuk" />
+   
+    <br />
+<br>
+
+      KATEGORI TURNAMEN
+      <br />
+
+      <input type="radio" name="jawaban" id="jawaban1" />
+      <label for="jawaban1">PEMULA</label> <br />
+
+      <input type="radio" name="jawaban" id="jawaban2" />
+      <label for="jawaban2">MENENGAH</label> <br />
+
+      <input type="radio" name="jawaban" id="jawaban3" />
+      <label for="jawaban3">PROFESIONAL</label> <br />
+<br>
+<br>
+      <label for="jumlahPemain">Jumlah Pemain:</label>
+      <input
+        type="number"
+        id="jumlahPemain"
+        name="jumlahPemain"
+        min="1"
+        max="100"
+        required
+      />
+      <input type="submit" value="Submit" />
+   
+ 
+<br>
+      <br />
+      <label for="waktu_mulai">waktu Mulai :</label>
+      <input type="week" Name "waktu_mulai" id="Waktu_mulai"
+      value="2024-W01"><br />
+      <label for="waktu_selesai">waktu selesai :</label>
+      <input
+        type="week"
+        name="waktu_selesai"
+        id="waktu_selesai"
+        value="2024-W52"
+      />
+      <br />
+      <input type="submit" value="Simpan" />
+  <br>
+ <br>
+    <form>
+      <input type="hidden" name="user_id" value="user_id" />
+      <label for="nama">Nama :</label>
+      <input type="text" name="nama" id="nama" /><br />
+      <input type="submit" value="simpan" />
+    </form>
+  </body>
+</html>
