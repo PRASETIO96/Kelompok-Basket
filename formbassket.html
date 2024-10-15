@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-image: url(img/OIP.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 50px;
+      margin: 0;
+    }
+  </style>
+  <body>
+    <form action="">
+      <label for="Tinggi_badan">Tinggi Badan:</label>
+      <input
+        type="range"
+        name="Tinggi_badan"
+        id="Tinggi_badan"
+        min="150"
+        max="220"
+        value="50"
+        step="10"
+      />
+      <br />
+
+      <label for="Telpon">Masukan Telpon :</label>
+      <input type="tel" name="Telpon" id="Telpon" pattern="(+62) [0-9]{5,20}" />
+      <input type="submit" value="simpan" />
+      <br />
+
+      <label for="Posisis">Posisi</label>
+      <select name="Posisi" id="Posisi" multiple size="1">
+        <option value="Guard">Guard</option>
+        <option value="Forward">Forward</option>
+        <option value="Center">Center</option>
+      </select>
+
+      <button type="Submit">Simpan</button>
+      <br />
+      <label for="hobby">Nama Team : </label>
+      <input type="text" name="hobby" id="hobby" list="hobbies" /><br />
+      <button type="submit">Simpan</button>
+      <datalist id="hobbies">
+        <option value="Basket">Basket</option>
+        <option value="Programmer">Programmer</option>
+        <option value="Music">Music</option>
+        <option value="Movie">Movie</option>
+             
+      </datalist>
+      <br />
+      <fieldset>
+        <legend>Informasi Pemain</legend>
+        <label for="nama">Nama :</label>
+        <input type="text" name="nama" id="nama" /> <br />
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" /> <br />
+        <label for="telepon">Telepon :</label>
+        <input type="tel" name="telepon" id="telepon" pattern="[0-9]{5,20}" />
+      </fieldset>
+      <fieldset>
+        <legend>Detail Turnament</legend>
+        <label for="tempat">Tempat :</label>
+        <input type="tempat" name="tempat" id="tempat" /> <br />
+        <label for="Jam">Jam :</label> <input type="Jam" name="Jam" id="Jam" />
+        <br />
+        <label for="Hari">Hari : </label>
+        <input type="Hari" name="Hari" id="Hari" /> <br />
+      </fieldset>
+      <button type="submit">Simpan</button>
+    </form>
+  </body>
+</html>
