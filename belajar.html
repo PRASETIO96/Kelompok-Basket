@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+    <script>
+      function kalkulator() {
+        // Meminta pengguna untuk memasukkan dua angka
+        let angkaPertama = prompt("Masukkan angka pertama:");
+        let angkaKedua = prompt("Masukkan angka kedua:");
+
+        // Mengonversi input ke tipe data Number
+        angkaPertama = Number(angkaPertama);
+        angkaKedua = Number(angkaKedua);
+
+        // Memastikan input valid
+        if (isNaN(angkaPertama) || isNaN(angkaKedua)) {
+          document.writeln("Input tidak valid!");
+        } else {
+          // Meminta pengguna untuk memilih operasi
+          let operasi = prompt("Pilih operasi: +, -, *, /");
+
+          let hasil;
+
+          // Menggunakan struktur if-else untuk menentukan operasi
+          if (operasi === "+") {
+            hasil = angkaPertama + angkaKedua;
+            document.writeln(
+              "Hasil dari " +
+                angkaPertama +
+                " + " +
+                angkaKedua +
+                " adalah " +
+                hasil +
+                "."
+            );
+          } else if (operasi === "-") {
+            hasil = angkaPertama - angkaKedua;
+            document.writeln(
+              "Hasil dari " +
+                angkaPertama +
+                " - " +
+                angkaKedua +
+                " adalah " +
+                hasil +
+                "."
+            );
+          } else if (operasi === "*") {
+            hasil = angkaPertama * angkaKedua;
+            document.writeln(
+              "Hasil dari " +
+                angkaPertama +
+                " * " +
+                angkaKedua +
+                " adalah " +
+                hasil +
+                "."
+            );
+          } else if (operasi === "/") {
+            if (angkaKedua !== 0) {
+              hasil = angkaPertama / angkaKedua;
+              document.writeln(
+                "Hasil dari " +
+                  angkaPertama +
+                  " / " +
+                  angkaKedua +
+                  " adalah " +
+                  hasil +
+                  "."
+              );
+            } else {
+              document.writeln("Pembagian dengan nol tidak dapat dilakukan!");
+            }
+          } else {
+            document.writeln("Operasi tidak valid!");
+          }
+        }
+      }
+    </script>
+  </head>
+  <body onload="kalkulator()">
+    <h1>Kalkulator Sederhana</h1>
+    <p>
+      Silakan ikuti instruksi pada prompt untuk m878uoipelakukan perhitungan.
+    </p>
+  </body>
+</html>
