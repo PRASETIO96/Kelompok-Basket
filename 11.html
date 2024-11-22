@@ -19,7 +19,7 @@
           document.write(`Nama : ${this.Nama}<br>`);
           document.write(`JenisKopiFavorit: ${this.jenis}<br>`);
           document.write(`Cara Menikmati: ${this.caraMenikmati}<br>`);
-          document.write(`Frekuensi: ${this.frekuensi} x/Hari<br><br>`);
+          document.write(`Berapa Kali: ${this.frekuensi} x/Hari<br><br>`);
         }
         tambahFrekuensi(nilai) {
           this.frekuensi += nilai;
@@ -28,12 +28,37 @@
           );
         }
       }
-      const KoffeeA = new Coffee("Prasetio", "Latte", "Dingin", 2);
-      const KoffeeB = new Coffee("Khaerani", "Cappuccino", "Panas", 1);
-      const KoffeeC = new Coffee("Raniza", "Macha", "Hangat", 1);
-      const KoffeeD = new Coffee("Zaskia Asthshila", "Butter Scotch", "Ice", 1);
-      const KoffeeE = new Coffee("Komarudin", "Latte", "Dingin", 2);
-      const KoffeeF = new Coffee("Fatimah", "machiato", "Dingin", 1);
+      const KoffeeA = new Coffee(
+        "Prasetio",
+        "Latte",
+        "Dengan menambahkan es di saat cuaca sedang panas",
+        2
+      );
+      const KoffeeB = new Coffee(
+        "Khaerani",
+        "Cappuccino",
+        "Hot cappuccino enak dinikmati di pagi hari.yang cuacanya masih dingin dan syahdu",
+        2
+      );
+      const KoffeeC = new Coffee(
+        "Raniza",
+        "Matcha latte",
+        "Saat hujan biasanya sangat enak jika hangat tetapi lebih sering meminum kopi yang dingin",
+        2
+      );
+      const KoffeeD = new Coffee(
+        "Zaskia Asthshila",
+        "Butter Scotch",
+        "butterscotch dengan ice sangat cocok dinikmati di cuaca panas",
+        1
+      );
+      const KoffeeE = new Coffee(
+        "Komarudin",
+        "Latte",
+        "Menikmati dengan es",
+        1
+      );
+      const KoffeeF = new Coffee("Fatimah", "Latte Machiato", "Dengan Es", 1);
       KoffeeA.tampilkanInfo();
       KoffeeB.tampilkanInfo();
       KoffeeC.tampilkanInfo();
