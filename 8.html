@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kawan Kopi</title>
+  </head>
+  <body>
+    <script>
+      let PilihCoffee = prompt("Jenis Kopi Yang Anda Suka?");
+
+      if (PilihCoffee) {
+        alert("Anda Memilih :" + PilihCoffee);
+        document.writeln("Anda Memilih Kopi:" + PilihCoffee);
+
+        let TambahGula = confirm("Apakah Anda Ingin Menambah Gula?");
+        if (TambahGula) {
+          alert("Gula Telah Ditambahkan");
+          document.writeln("Dengan Tambahan Gula");
+        } else {
+          alert("Tanpa Gula");
+          document.writeln("Tanpa Gula");
+        }
+      }
+    </script>
+  </body>
+</html>
