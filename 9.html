@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee</title>
+  </head>
+  <body>
+    <script>
+      // Variabel Prompt untuk memilih coffee
+      let pilihan = prompt(
+        "Pilih Coffee Favorit Anda: Espresso, Americano, Latte, Cappuccino, Macchiato, Mocha, Affogato, Cold Brew, Irish Coffee, atau Flat White."
+      ).toLowerCase(); // Lowercase memastikan huruf kecil
+
+      if (pilihan === null) {
+        // Jika pengguna menekan Cancel pada prompt
+        document.writeln("Anda membatalkan pilihan kopi.");
+      } else {
+        let deskripsi; // Membuat variabel deskripsi
+        switch (pilihan) {
+          case "espresso":
+            deskripsi = "Espresso: Kopi murni dengan rasa kuat";
+            break;
+          case "americano":
+            deskripsi = "Americano: Espresso dicampur dengan air panas.";
+            break;
+          case "latte":
+            deskripsi = "Latte: Kopi yang disajikan dengan susu.";
+            break;
+          case "cappuccino":
+            deskripsi = "Cappuccino: Kopi dengan busa susu yang melimpah.";
+            break;
+          case "macchiato":
+            deskripsi = "Macchiato: Espresso dengan sedikit busa susu.";
+            break;
+          case "mocha":
+            deskripsi = "Mocha: Latte dengan tambahan cokelat.";
+            break;
+          case "affogato":
+            deskripsi = "Affogato: Espresso yang disiram di atas es krim.";
+            break;
+          case "cold brew":
+            deskripsi = "Cold Brew: Kopi yang diseduh dengan air dingin.";
+            break;
+          case "irish coffee":
+            deskripsi = "Irish Coffee: Kopi dengan tambahan whiskey dan krim.";
+            break;
+          case "flat white":
+            deskripsi =
+              "Flat White: Latte dengan proporsi susu yang lebih sedikit.";
+            break;
+          default:
+            deskripsi = "Pilihan tidak valid.";
+        }
+
+        // Menampilkan deskripsi di web
+        document.writeln(deskripsi);
+
+        // Variabel pesan berdasarkan pilihan kopi
+        let pesan; // Membuat variabel pesan
+        pesan =
+          pilihan === "espresso"
+            ? "Espresso: Apakah ingin menambahkan Gula?"
+            : pilihan === "latte"
+            ? "Latte: Apakah Ingin Menambahkan Sirup Vanilla?"
+            : pilihan === "affogato"
+            ? "Affogato: Nikmati Campuran Dengan Es Krim!"
+            : pilihan === "cappuccino"
+            ? "Cappuccino: Ingin Menambahkan Ekstra Susu?"
+            : pilihan === "americano"
+            ? "Americano: Apakah ingin menambahkan susu?"
+            : "Pilihan tidak dikenali.";
+
+        // Menampilkan pesan di popup (alert)
+        alert(pesan);
+      }
+    </script>
+  </body>
+</html>
