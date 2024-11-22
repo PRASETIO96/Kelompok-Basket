@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h2>Daftar Pesanan Coffee</h2>
+    <script>
+      const DaftarPesanan = [
+        "Espresso",
+        "Latte",
+        "Capuccino",
+        "Mocha",
+        "Americano",
+      ];
+      for (let i = 0; i < DaftarPesanan.length; i++) {
+        document.write(DaftarPesanan[i] + "<br>");
+      }
+    </script>
+    <h2>Jumlah Total Cangkir</h2>
+    <script>
+      let TotalCangkir = 0;
+      while (TotalCangkir <= 50) {
+        document.write("TotalCangkir: " + TotalCangkir + "  cangkir/hari<br>");
+        TotalCangkir += 10;
+      }
+    </script>
+  </body>
+</html>
